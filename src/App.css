@@ -1,0 +1,143 @@
+/* UNIVERSAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal; 
+    font-size: normal;
+    font-family: Georgia, serif;
+    box-sizing: border-box;  
+}
+
+body {
+    padding: clamp(12px, 4vw, 32px);
+}
+
+/* HEADER STYLE */
+header {
+    padding: 30px;
+    margin: 50px auto;        
+    max-width: 600px;        
+    border: 3px solid #002769;
+    box-shadow: 0px 0px 10px 0px #000000;
+    border-radius: 20px;
+    background-color: #35abf4;
+    text-align: center;      
+}
+
+header > h1 {
+    font-size: x-large;
+    font-weight: bolder;
+    color: #000000;
+}
+
+header > small {
+    font-size: medium;
+    font-weight: lighter;
+}
+
+#formContainer {
+    padding: 30px;
+    margin: 50px auto;        
+    max-width: 600px;         
+    border: 3px solid #001d50;
+    box-shadow: 0px 0px 10px 0px #000000;
+    border-radius: 20px;
+    background-color: #35abf4;
+    text-align: center;      
+}
+
+#studentForm {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+    margin: 10px 0;
+}
+
+.input-fields > label {
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.input-fields > input {
+    font-weight: bolder;
+    border: 2px solid #00076b;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    width: 250px;            
+}
+
+/* BUTTON STYLE */
+#studentForm button {
+    font-weight: bolder;
+    background-color: #002769;
+    color: #ffffff;
+    padding: 12px 24px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #002769;
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+#studentForm button:hover {
+    background-color: #001d50;
+    transform: translateY(-2px);
+}
+
+#studentForm button:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
+/* STUDENT LIST STYLE */
+#studentList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    gap: 16px;
+}
+
+#studentList > article {
+    min-width: 0;
+    padding: 18px;
+    border: 2px solid #002769;
+    border-top-width: 6px;
+    border-radius: 8px;
+    background-color: #eaf6ff;
+    box-shadow: 0 4px 10px rgb(0 39 105 / 14%);
+}
+
+#studentList > article > h2 {
+    padding-bottom: 8px;
+    color: #002769;
+    font-size: large;
+    font-weight: bolder;
+    overflow-wrap: anywhere;
+}
+
+#studentList > article > p {
+    color: #172b45;
+    font-size: medium;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+#studentList > article > button {
+    margin-top: 16px;
+    padding: 9px 14px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #002769;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#studentList > .list-item > button {
+    background-color: #cc0000;
+}
